@@ -537,7 +537,7 @@ def make_v0(apps, apks, repodir, repodict, requestsdict, fdroid_signing_key_fing
                     permel.setAttribute('name', permission_sdk_23[0])
                 if 'nativecode' in apk:
                     addElement('nativecode', ','.join(sorted(apk['nativecode'])), doc, apkel)
-                addElementNonEmpty('features', ','.join(sorted(apk['features'])), doc, apkel)
+                # addElementNonEmpty('features', ','.join(sorted(apk['features'])), doc, apkel)
 
         if current_version_file is not None \
                 and common.config['make_current_version_link'] \
